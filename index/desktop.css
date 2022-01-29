@@ -1,0 +1,38 @@
+.nav-container-T {
+  display: flex;
+}
+
+.section-one-container h1 {
+  font-size: 4rem;
+}
+
+.section-one-container p {
+  font-size: 1.8rem;
+}
+
+.carrousel {
+  width: 65%;
+  min-width: 700px;
+}
+
+.arrow-left {
+  display: block;
+}
+
+.carrousel .grande {
+  width: 200%;
+  transform: translateX(-50%);
+}
+
+.carrousel .taller {
+  max-width: none;
+  width: 20%;
+}
+
+.arrow-Rigth {
+  display: block;
+}
+
+.carrousel .puntos {
+  display: none;
+}
