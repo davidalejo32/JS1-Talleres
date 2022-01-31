@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <title>Figuras Geometricas | Curso Practico de JavaScript</title>
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="./css/tablet.css" media="screen and (min-width: 480px)">
+   <link rel="stylesheet" href="./css/desktop.css" media="screen and (min-width: 770px)">
+</head>
+<body>
+
+   <header>
+      <nav>
+         <a href="../index.html" class="nav-container-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+               <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+               <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+             </svg>
+               
+            <p>Inicio</p>
+         </a>
+
+         <div class="nav-container-T">
+            <a href="./figuras.html"><p>T1</p></a>
+            <a href=""><p>T2</p></a>
+            <a href=""><p>T3</p></a>
+            <a href=""><p>T4</p></a>
+         </div>
+      </nav>
+   </header>
+
+   <section class="title">
+      <figure>
+         <img src="img/octaedro.svg" alt="icono de figura Geometricas">
+      </figure>
+      <h1>Figuras <br> Geometricas</h1>
+   </section>
+
+   <div class="subtitle">
+      <p>Estoy para ayudarte a calcular el Area y el Perimetro de tus Figuras</p>
+   </div>
+   <main>
+
+      <section class="main-section-figure one">
+         <div class="section-figure-title">
+            <h2>¡Vamos a calcular el área y perímetro de un Cuadrado!</h2>
+            <figure>
+               <img src="img/box-cube.svg" alt="figura de cuadrado">
+            </figure>
+            <p>Escribe cuanto mide el lado de tu Cuadrado</p>
+
+            <div class="section-figure-form">
+               <form action="">
+                  <div class="lado-c">
+                     <label for="inputCuadrado">Lado (L)</label>
+                     <input type="number" id="inputCuadrado" placeholder="Lado del cuadrado">
+                  </div>
+                  <p id="error"></p>
+                  <div class="buttons">
+                     <button type="button" onclick="calcularPerimetroCuadrado()">Calcular el Perimetro</button>
+                     <button type="button" onclick="calcularAreaCuadrado()">Calcular el Area</button>
+                  </div>
+                  <p class="resultadoC" id="resultadoCuadrado"></p>
+               </form>
+            </div>
+         </div>
+      </section>
+
+      <section class="main-section-figure two">
+         <div class="section-figure-title">
+            <h2>¡Vamos a calcular el área y perímetro de un Triangulo!</h2>
+            <figure>
+               <img src="./img/triangle.svg" alt="figura de Triangulo">
+            </figure>
+            <p>Escribe cuanto mide los lados del Triangulo</p>
+            <div class="select">
+               <select name="tipos" id="tipos" onchange="option()">
+                  <option value="calcular-perimetro">Calcular el Perimetro</option>
+                  <option value="calcular-area">Calcular el Area</option>
+               </select>
+            </div>
+            <div class="section-figure-form">
+               <form action="">
+                  <div class="form-label-input">
+                        <div id="ladoA">
+                           <label for="left-triangulo">Lado (A)</label>
+                           <input type="number" id="left-triangulo" placeholder="Lado derecho">
+                        </div>
+                        <p id="errorA" class="errorInput"></p>
+
+                        <div id="ladoB">
+                           <label for="rigth-triangulo">Lado (B)</label>
+                           <input type="number" id="rigth-triangulo" placeholder="Lado izquierdo">
+                        </div>
+                        <p id="errorB" class="errorInput"></p>
+
+                        <div>
+                           <label for="base-triangulo">Base</label>
+                           <input type="number" id="base-triangulo" placeholder="Base">
+                        </div>
+                        <p id="errorBase" class="errorInput"></p>
+
+                        <div id="altura">
+                           <label for="altura-triangulo">Altura (H)</label>
+                           <input type="number" id="altura-triangulo" placeholder="Altura">
+                        </div>
+                        <p id="errorAltura" class="errorInput"></p>
+                  </div>
+                  <div class="buttons" >
+                     <button type="button" onclick="calcularPerimetroTriangulo()" id="calcularPerimetro" >Calcular el Perimetro</button>
+                     <button type="button" onclick="calcularAreaTriangulo()" id="calcularArea">Calcular el Area</button>
+                  </div>
+                  <p id="resultadoTriangulo" class="resultadoTriangulo"></p>
+               </form>
+            </div>
+         </div>
+      </section>
+
+      <section class="main-section-figure three">
+         <div class="section-figure-title">
+            <h2>¡Vamos a calcular el área y perímetro de un Circulo!</h2>
+            <figure>
+               <img src="./img/circle-icon-.svg" alt="figura de un circulo">
+            </figure>
+            <p>Escribe cuanto mide el radio de tu Circulo</p>
+
+            <div class="section-figure-form">
+               <form action="">
+                  <div class="lado-c">
+                     <label for="radioCirculo">Radio (R)</label>
+                     <input type="number" id="radioCirculo" placeholder="Radio">
+                  </div>
+                  <p id="errorCirculo"></p>
+                  <div class="buttons">
+                     <button type="button" onclick="calcularPerimetroCirculo()">Calcular el Perimetro</button>
+                     <button type="button" onclick="calcularAreaCirculo()">Calcular el Area</button>
+                  </div>
+                  <p class="resultadoCir" id="resultadoCirculo"></p>
+               </form>
+            </div>
+         </div>
+      </section>
+      
+   </main>
+   <script src="./figuras.js"></script>
+</body>
+</html>
