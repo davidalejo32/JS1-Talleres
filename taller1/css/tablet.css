@@ -1,0 +1,14 @@
+.form-label-input div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.form-label-input div {
+  align-items: center;
+}
+
+.form-label-input div label {
+  margin: 0 auto;
+}
