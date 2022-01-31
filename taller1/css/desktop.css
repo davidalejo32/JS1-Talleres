@@ -1,0 +1,50 @@
+main {
+  width: 80%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* flex-basis: 10rem;  */
+   /* flex-grow: 1;  */
+  margin: 0 auto;
+}
+
+.lado-c {
+  flex-direction: row;
+}
+
+.section-figure-form label {
+  margin-bottom: 0;
+}
+
+.form-label-input div{
+   margin-top: 1rem;
+}
+.buttons {
+  flex-direction: row;
+}
+
+.section-figure-form input {
+  margin-bottom: 1rem;
+}
+
+.buttons {
+  justify-content: space-around;
+  margin-top: 4rem;
+}
+
+.section-figure-form button {
+  width: 45%;
+}
+
+#error, #errorCirculo {
+  margin-left: 8rem;
+}
+
+.errorInput {
+  margin-left: 14rem;
+}
+
+.nav-container-T{
+  display: flex;
+}
+
