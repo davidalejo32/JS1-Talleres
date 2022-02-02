@@ -1,0 +1,58 @@
+.nav-container-T  {
+   display: flex;
+}
+
+main {
+   flex-direction: row;
+   justify-content: center;
+}
+.section-container-one{
+   padding: 4rem;
+   height: 18rem;
+}
+
+.section-title{
+   font-size: 4rem;
+}
+
+.section-container-one p  {
+   font-size: 5rem;
+}
+
+.subtitle {
+   font-size: 3rem;
+}
+
+.section-two-container{
+   margin-left: 10rem;
+   order: 2;
+}
+
+.section-two-container h2{
+   font-size: 3rem;
+}
+
+.section-two-container ul li {
+   font-size: 1.7rem;
+}
+
+.section-three-container {
+   /* margin-left: 10rem; */
+   padding: 2rem;
+}
+
+form label{
+   font-size: 1.8rem;
+}
+
+.codigo-descuento{
+   font-size: 1.8rem;
+}
+
+#respuesta {
+  font-size: 1.6rem;
+}
+
+.cupon-title label {
+  font-size: 2rem;
+}
