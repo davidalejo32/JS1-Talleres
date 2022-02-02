@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+   <!-- bootstrap -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+   <link rel="stylesheet" href="/taller2/css/style.css">
+   <link rel="stylesheet" href="/taller2/css/desktop.css" media="screen and (min-width: 770px)">
+</head>
+<body>
+   <header>
+      <nav>
+         <a href="../index.html" class="nav-container-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+               <path fill-rule="evenodd" d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6zm5-.793V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+               <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+             </svg>
+               
+            <p>Inicio</p>
+         </a>
+
+         <div class="nav-container-T">
+            <a href="../taller1/figuras.html"><p>T1</p></a>
+            <a href="./porcentajes.html"><p>T2</p></a>
+            <a href=""><p>T3</p></a>
+            <a href=""><p>T4</p></a>
+         </div>
+      </nav>
+   </header>
+
+   <section class="section-container-one">
+      <h1 class="section-title">Porcentajes</h1>
+      <p>%</p>
+   </section>
+   
+<!--    <p class="subtitle">¡Ey! Voy a ayudarte a calcular los precios de un producto.</p> -->
+   
+   <main>
+      <section class="section-two-container">
+         <h2>Cupones de Prueba</h2>
+         <ul id="lista">
+            <li>promo10</li>
+            <li>promo20</li>
+            <li>promo30</li>
+   
+         </ul>
+
+         <form action="" class="agregar-cupon">
+            <div class="cupon-title">
+               <input type="checkbox" name="" id="checkbox" onclick="mostrar()">
+               <label for="checkbox">Agregar mis propios cupones</label>
+            </div>
+
+            <div class="name" id="name">
+               <label for="nameCupon" >Nombre del cupon</label>
+               <input type="text" placeholder="promo40" id="nameCupon">
+               <p class="mensaje-error" id="error-name"></p>
+            </div>
+
+            <div class="value" id="value">
+               <label for="valueCupon">Valor de descuento del cupon</label>
+               <input type="number" placeholder="40" id="valueCupon">
+               <p class="mensaje-error" id="errorValue"></p>
+            </div>
+            <button type="button" class="cupon-button" id="cupon-button" onclick="agregarCupones()">Agregar Cupon</button>
+         </form>
+      </section>
+
+      <section class="section-three-container">
+
+         <form action="">
+            <div class="three-container-price input">
+               <label for="precio">Ingresa el precio un producto sin punto (.)</label>
+               <input type="number" id="precio" placeholder="50000...">
+               <p class="mensaje-error" id="error-pre"></p>
+            </div>
+
+            <div class="input" id="porcentajenNum">
+               <label for="porcentaje">Ingresa el porcentaje solo en numeros</label>
+               <input type="number" id="porcentaje" placeholder="15">
+               <p class="mensaje-error" id="error-por"></p>
+
+            </div>
+
+            <div class="input" id="cupon-code">
+               <label for="cupon">Ingresa el cupon de descuento</label>
+               <input type="text" id="cupon" placeholder="promo10">
+               <p class="mensaje-error" id="error-cupon"></p>
+            </div>
+
+            <p class="codigo-descuento">Tengo cupon de descuento</p>
+            <div class="descuento">
+               <div>
+                  <input type="radio" id="codigo-no" name="codigo" onclick="option1()" value="no">
+                  <label for="codigo-si">No</label>
+
+               </div>
+   
+               <div>
+                  <input type="radio" id="codigo-si" name="codigo" onclick="option2()" value="si">
+                  <label for="codigo-no">Si</label>
+               </div>
+            </div>
+
+
+
+         </form>
+         <button type="button" class="button" onclick="calcularPorcentaje()">Calcular Precio</button>
+
+         <p id="respuesta"></p>
+
+      </section>
+
+      <section>
+
+      </section>
+
+   </main>
+   <script src="./porcentajes.js"></script>
+
+</body>
+</html>
