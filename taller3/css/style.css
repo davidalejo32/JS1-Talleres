@@ -1,0 +1,228 @@
+:root {
+  --black: #0b090a;
+  --gray: #191b1d;
+  --gray-light: #d9d9d9;
+  --red: #703030;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1.6rem;
+  background-color: var(--gray-light);
+}
+
+
+html {
+  font-size: 62.5%;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 5.5rem;
+}
+
+header nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background-color: var(--black);
+}
+
+.nav-container-icon {
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 3rem;
+  border-bottom: 2px solid var(--black);
+}
+
+.nav-container-icon:hover {
+  border-bottom: 2px solid var(--gray-light);
+  transition: 0.5s;
+}
+
+.nav-container-icon svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--gray-light);
+}
+
+.nav-container-icon p {
+  margin: 0;
+  margin-left: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--gray-light);
+}
+
+.nav-container-T {
+  display: none; /*desocultar*/
+  justify-content: center;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-container-T a {
+  text-decoration: none;
+}
+
+.nav-container-T p {
+  margin: 0;
+  margin-right: 2rem;
+  vertical-align: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  border: 2px solid black;
+  color: var(--gray-light);
+}
+
+.nav-container-T p:hover {
+  color: white;
+  border-bottom: 2px solid var(--gray-light);
+  transition: 0.5s;
+}
+
+
+.title {
+  box-sizing: border-box;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  /* color: white; */
+  color: var(--gray);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+main {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+section {
+  box-sizing: border-box;
+  width: 90%;
+  max-width: 500px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.63);
+  border-radius: 2rem;
+}
+
+.subtitle {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  text-align: justify;
+  /* color: #000000; */
+  color: #4b444e;
+  font-size: 1.5rem;
+}
+
+section form {
+  box-sizing: border-box;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+main form label {
+  box-sizing: border-box;
+  margin-bottom: 2rem;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+main form input {
+  box-sizing: border-box;
+  width: 80%;
+  height: 3rem;
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+  text-indent: 1rem;
+  /* margin-bottom: 3rem; */
+  background-color: #f8f8f8;
+  border: 1px solid black;
+}
+
+#error {
+  height: 2rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(243, 63, 63, 0.926);
+  margin-top: 2px;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons div {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttons div button {
+  box-sizing: border-box;
+  width: 26rem;
+  height: 3.5rem;
+  /* background-color: #575656; */
+  background-color: #374353;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.buttons div button:hover {
+  background-color: rgb(163, 163, 163);
+  color: #ffffff;
+}
+
+.buttons div p {
+  box-sizing: border-box;
+  width: 90%;
+  height: 4rem;
+  text-align: start;
+  margin-left: 4rem;
+  color: rgb(66, 66, 66);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+
+
