@@ -1,0 +1,32 @@
+header h1 {
+  font-size: 3.5rem;
+}
+
+section {
+  width: 60%;
+  padding: 5rem;
+}
+
+section:hover {
+  box-shadow: 1px 3px 16px 4px rgba(0, 0, 0, 0.53);
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+main form input {
+  width: 60%;
+}
+
+.buttons div {
+  flex-direction: row;
+}
+
+.buttons div p {
+  height: 100%;
+}
+
+.nav-container-T {
+  display: flex; 
+}
