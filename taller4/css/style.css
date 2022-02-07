@@ -1,0 +1,269 @@
+:root {
+   --black: #0b090a;
+   --gray: #191b1d;
+   --gray-light: #d9d9d9;
+   --red: #703030;
+ }
+ 
+ html {
+   font-size: 62.5%;
+ }
+ * {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Rubik", sans-serif;
+ }
+ 
+ body {
+   background-color: var(--gray-light) !important;
+ }
+ 
+ header {
+   width: 100%;
+   height: 5.5rem;
+ }
+ 
+ header nav {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: end;
+   align-items: center;
+   background-color: var(--black);
+ }
+ 
+ .nav-container-icon {
+   height: 4rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   margin-right: 3rem;
+   border-bottom: 2px solid var(--black);
+ }
+ 
+ .nav-container-icon:hover {
+   border-bottom: 2px solid var(--gray-light);
+   transition: 0.5s;
+ }
+ 
+ .nav-container-icon svg {
+   width: 2.5rem;
+   height: 2.5rem;
+   color: var(--gray-light);
+ }
+ 
+ .nav-container-icon p {
+   margin: 0;
+   margin-left: 1rem;
+   font-size: 2rem;
+   font-weight: 500;
+   color: var(--gray-light);
+ }
+ 
+ .nav-container-T {
+   display: none; /*desocultar*/
+   justify-content: center;
+   text-align: center;
+   margin-right: 2rem;
+ }
+ 
+ .nav-container-T a {
+   text-decoration: none;
+ }
+ 
+ .nav-container-T p {
+   margin: 0;
+   margin-right: 2rem;
+   vertical-align: center;
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 400;
+   border: 2px solid black;
+   color: var(--gray-light);
+ }
+ 
+ .nav-container-T p:hover {
+   color: white;
+   border-bottom: 2px solid var(--gray-light);
+   transition: 0.5s;
+ }
+
+ .container-title {
+    width: 100%;
+    height: auto;
+    padding: 3rem;
+    background-color: var(--gray);
+    margin-bottom: 3rem;
+ }
+
+ .container-title p {
+   position: relative;
+   box-sizing: border-box;
+   font-size: 3rem;
+   color: white;
+   font-weight: 600;
+   text-align: center;
+ }
+
+ main {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .section-one-form {
+    width: 100%;
+    max-width: 350px;
+ }
+
+ .section-one-form form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .form-calculos {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+ }
+ .form-calculos label{ 
+   font-size: 2rem;
+   color: black;
+   font-weight: 600;
+ }
+
+.form-calculos select{
+   margin-left: 1.5em;
+   height: 2.8rem;
+   border-radius: .5rem;
+   outline: none;
+   background-color: white;
+   font-size: 1.3rem;
+}
+
+.form-check {
+   width: 100%;
+   padding: 0;
+   height: auto;
+   display: flex;
+   align-items: center;
+   margin-top: 2rem;
+}
+
+.form-check input {
+   width: 2rem;
+   height: 2rem;
+}
+
+.form-check label {
+   margin-left: 1rem;
+   font-size: 1.4rem;
+   font-weight: 700;
+}
+
+.valores-list {
+   width: 100%;
+   height: auto;
+   margin-top: 3rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.valores-list label {
+   font-size: 1.4rem;
+   font-weight: 500;
+}
+
+.valores-list input, .valores-list-drop input {
+   margin-top: 1rem;
+   height: 3.5rem;
+   outline: none;
+   border: 1px solid black;
+   text-indent: 1rem;
+   border-radius: .4rem;
+   font-size: 1.2rem;  
+}
+
+.valores-list button, .valores-list-drop button{
+   height: 3.5rem;
+   background-color: #474e53;
+   border: none;
+   color: white;
+   font-size: 1.6rem;
+   font-weight: 600;
+   border-radius: .4rem;
+}
+
+.valores-list-drop {
+   width: 100%;
+   height: auto;
+   margin-top: 2rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.valores-list-drop label{
+   font-size: 1.4rem;
+   font-weight: 500;
+   margin-top: 2rem;
+}
+
+.calcular-mediana {
+   margin-top: 3rem;
+   height: 3.5rem;
+   background-color: #4b7293;
+   border: none;
+   color: white;
+   font-size: 1.6rem;
+   font-weight: 600;
+   border-radius: .4rem;
+}
+
+.section-precargados {
+   width: 100%;
+   margin-top: 3rem; /*comentar creo*/
+   display: flex;
+   flex-direction: column;
+}
+
+.section-cargado{
+   width: 100%;
+   margin-top: 3rem; /*comentar creo*/
+   display: flex;
+   flex-direction: column;
+}
+
+.precargado-title p, .cargado-tilte p {
+   /* font-size: 3rem; */
+   font-size: 1.8rem;
+   font-weight: 700;
+}
+
+.precargado-list li, .cargado-list li {
+   margin-top: 2rem;
+   font-size: 1.6rem;
+   font-weight: 400;
+
+}
+
+.error {
+   height: 2rem;
+   font-size: 1.2rem;
+   font-weight: 500;
+   color: rgba(243, 63, 63, 0.926);
+   margin-top: 2px;
+   margin-bottom: 2rem;
+}
+
+#resultado {
+   color: var(--black);
+   font-size: 1.6rem;
+   height: 7rem;
+}
