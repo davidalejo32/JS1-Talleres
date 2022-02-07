@@ -30,3 +30,7 @@ main form input {
 .nav-container-T {
   display: flex; 
 }
+
+.container-title {
+  height: 18rem;
+}
