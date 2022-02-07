@@ -1,0 +1,29 @@
+.nav-container-T {
+   display: flex;
+}
+main {
+   flex-direction: row;
+   margin-bottom: 5rem;
+   align-items: flex-start;
+
+}
+
+.section-cargado {
+   /* margin-left: 9rem; */
+   padding-left: 9rem;
+}
+
+
+
+.section-precargados {
+   margin-top: 0;
+}
+
+.section-cargado{
+   margin-top: 0;
+}
+
+.precargado-title p, .cargado-tilte p {
+   font-size: 2.5rem;
+
+}
