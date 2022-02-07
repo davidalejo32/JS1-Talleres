@@ -95,13 +95,19 @@ header nav {
 }
 
 
+.container-title {
+  width: 100%;
+  height: auto;
+  background-color: var(--gray);
+  margin-bottom: 4rem;
+  padding: 3rem;
+}
 .title {
   box-sizing: border-box;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
+
   text-align: center;
-  /* color: white; */
-  color: var(--gray);
+  color: white;
+  /* color: var(--gray); */
   font-size: 3rem;
   font-weight: 700;
 }
